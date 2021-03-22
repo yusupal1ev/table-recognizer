@@ -1,0 +1,5 @@
+/images
+/old
+/__pycache__/
+.idea/
+tests.py
