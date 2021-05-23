@@ -14,7 +14,6 @@ app.config["SECRET_KEY"] = os.environ['SECRET_KEY']
 @app.route("/", methods=['GET', 'POST'])
 def index():
     if request.method == "POST":
-        print(request.files)
         if 'image' in request.files and request.files['image'].filename != '':
             uploaded_file = request.files['image']
             if uploaded_file.filename.endswith(app.config["FILE_FORMATS"]):
